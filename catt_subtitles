@@ -13,13 +13,13 @@ fi
 which ffmpeg > /dev/null
 if [[ $? -ne 0 ]]; then
   echo "You need to install ffmpeg (https://ffmpeg.org/download.html) to make use of this script."
-	exit -1
+  exit -1
 fi
 
 which catt > /dev/null
 if [[ $? -ne 0 ]]; then
   echo "You need to install catt (https://github.com/skorokithakis/catt#installation) to make use of this script."
-	exit -1
+  exit -1
 fi
 
 subtitles=$(mktemp --suffix=.srt --dry-run)
